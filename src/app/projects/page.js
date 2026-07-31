@@ -6,8 +6,8 @@ export default function Projects() {
     <>
       <ProjectSearch />
       <p>
-        You can check out the rest of my projects{" "}
-        <Link href="https://github.com/martin226?tab=repositories&q=&type=source">
+        You can find the rest of my projects{" "}
+        <Link href="https://github.com/deepanshiruhil?tab=repositories">
           here
         </Link>
         .

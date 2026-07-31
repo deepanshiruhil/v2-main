@@ -12,8 +12,8 @@ const CommandPalette = dynamic(() => import("./components/CommandPalette"), {
 });
 
 export const metadata = {
-  title: "Martin Sit",
-  metadataBase: new URL("https://martinsit.ca"),
+  title: "Deepanshi Ruhil",
+  metadataBase: new URL("https://deepanshiruhilportfolio.vercel.app"),
 };
 
 export default function RootLayout({ children }) {
@@ -25,8 +25,8 @@ export default function RootLayout({ children }) {
       <body className={GeistSans.className}>
         <SpeedInsights />
         <ThemeProvider>
-          <main className="flex justify-center bg-stone-100 dark:bg-black font-extralight min-h-screen selection:bg-yellow-200 dark:selection:bg-yellow-800 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] dark:bg-[radial-gradient(#1f2937_1px,transparent_1px)] [background-size:16px_16px]">
-            <div className="flex flex-col gap-4 w-full md:max-w-[500px] m-6 md:m-20 text-neutral-500 dark:text-neutral-400 md:mt-[60px]">
+          <main className="flex justify-center bg-[#e8dfd0] dark:bg-[#111111] font-extralight min-h-screen selection:bg-[#c9bda8] dark:selection:bg-[#3a342c] bg-[radial-gradient(#cfc5b6_1px,transparent_1px)] dark:bg-[radial-gradient(#2a2723_1px,transparent_1px)] [background-size:16px_16px]">
+            <div className="flex flex-col gap-4 w-full md:max-w-[500px] m-6 md:m-20 text-[#29251f] dark:text-[#d8cdbd] md:mt-[60px]">
               <Header />
               {children}
               <Footer />

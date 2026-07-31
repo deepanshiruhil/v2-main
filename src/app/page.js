@@ -3,17 +3,11 @@
 import Link from "./components/Link";
 import NextLink from "next/link";
 import dynamic from "next/dynamic";
+import { GalleryHorizontalEnd } from "lucide-react";
+
 const Signature = dynamic(() => import("@/app/components/Signature"), {
   ssr: false,
 });
-import ShopifyLogo from "@/app/components/icon/Shopify.png";
-import UWaterlooLogo from "@/app/components/icon/UWaterloo.png";
-import SunnybrookLogo from "@/app/components/icon/Sunnybrook.png";
-import BrowserbaseLogo from "@/app/components/icon/Browserbase.png";
-import PolymarketLogo from "@/app/components/icon/Polymarket.png";
-import Image from "next/image";
-import { useState } from "react";
-import { GalleryHorizontalEnd } from "lucide-react";
 
 export default function About() {
   return (
@@ -21,190 +15,244 @@ export default function About() {
       <ul className="grid gap-1 text-base">
         <li className="group flex items-start gap-4 pl-4 relative hover:translate-x-1 transition-transform duration-200">
           <div className="absolute left-0 top-[10px] w-[6px] h-[6px] bg-stone-800 dark:bg-stone-200 rotate-45 transform transition-all duration-300 group-hover:rotate-90 group-hover:scale-110" />
+
           <span className="text-stone-600 dark:text-stone-400">
-            Engineering
-            <span className="inline-flex items-baseline gap-1 ml-2">
-              <Image
-                src={PolymarketLogo}
-                alt="Polymarket Logo"
-                width={14}
-                height={14}
-                className="object-contain relative top-[2px]"
-              />
-              <Link href="https://polymarket.com" className="font-medium">
-                Polymarket
+            SDE Intern
+            <span className="ml-2">
+              →
+              <Link
+                href="https://www.saleostech.com"
+                className="font-medium ml-2"
+              >
+                SaleOSTech Limited, UK
               </Link>
             </span>
           </span>
         </li>
+
         <li className="group flex items-start gap-4 pl-4 relative hover:translate-x-1 transition-transform duration-200">
           <div className="absolute left-0 top-[10px] w-[6px] h-[6px] bg-stone-800 dark:bg-stone-200 rotate-45 transform transition-all duration-300 group-hover:rotate-90 group-hover:scale-110" />
+
           <span className="text-stone-600 dark:text-stone-400">
-            CS
-            <span className="inline-flex items-baseline gap-1 ml-2">
-              <Image
-                src={UWaterlooLogo}
-                alt="UWaterloo Logo"
-                width={14}
-                height={14}
-                className="object-contain relative top-[2px]"
-              />
-              <Link href="https://uwaterloo.ca" className="font-medium">
-                UWaterloo
+            CSAI Junior
+            <span className="ml-2">
+              →
+              <Link
+                href="https://www.igdtuw.ac.in"
+                className="font-medium ml-2"
+              >
+                IGDTUW
               </Link>
             </span>
           </span>
         </li>
+
         <li className="group flex flex-col gap-3 pl-4 relative hover:translate-x-1 transition-transform duration-200">
           <div className="absolute left-0 top-[10px] w-[6px] h-[6px] bg-stone-800 dark:bg-stone-200 rotate-45 transform transition-all duration-300 group-hover:rotate-90 group-hover:scale-110" />
+
           <span className="text-stone-600 dark:text-stone-400 italic font-medium">
-            what i&apos;ve been building:
+            what i&apos;ve been doing:
           </span>
+
           <ul className="grid gap-1 pl-4">
             <li className="relative flex items-start gap-4 group/item">
               <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
                 ↳
               </span>
               <span className="text-stone-600 dark:text-stone-400">
-                created{" "}
-                <Link href="https://tryvibedraw.com" className="font-medium">
-                  Cursor for 3D modeling
-                </Link>{" "}
-                (3M+ views, 1,900+ stars, inbound VC interest from Sequoia,
-                a16z, GC, others)
-              </span>
-            </li>
-            <li className="relative flex items-start gap-4 group/item">
-              <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
-                ↳
-              </span>
-              <span className="text-stone-600 dark:text-stone-400">
-                shipped a{" "}
-                <Link href="https://jakesresu.me" className="font-medium">
-                  product
-                </Link>{" "}
-                in &lt; 2 days to 10,000+ users
-              </span>
-            </li>
-            <li className="relative flex items-start gap-4 group/item">
-              <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
-                ↳
-              </span>
-              <span className="text-stone-600 dark:text-stone-400">
-                did it again with another{" "}
-                <Link href="https://justslideitin.com" className="font-medium">
-                  product
-                </Link>{" "}
-                (1,000+ users in &lt; 24 hours)
-              </span>
-            </li>
-            <li className="relative flex items-start gap-4 group/item">
-              <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
-                ↳
-              </span>
-              <span className="text-stone-600 dark:text-stone-400">
-                built a{" "}
+                built{" "}
                 <Link
-                  href="https://github.com/martin226/litenet"
+                  href="https://github.com/deepanshiruhil/HarborCore"
                   className="font-medium"
                 >
-                  deep learning framework
-                </Link>{" "}
-                from scratch in C++
+                  HarborCore
+                </Link>
+                , a concurrent port reconciliation system using pessimistic
+                locking, CTEs, and window functions
+              </span>
+            </li>
+
+            <li className="relative flex items-start gap-4 group/item">
+              <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
+                ↳
+              </span>
+              <span className="text-stone-600 dark:text-stone-400">
+                built{" "}
+                <Link
+                  href="https://notationbydeepanshi.vercel.app"
+                  className="font-medium"
+                >
+                  Notation
+                </Link>
+                , a multimodal PDF-to-LaTeX pipeline using Gemini 2.5 Flash
+              </span>
+            </li>
+
+            <li className="relative flex items-start gap-4 group/item">
+              <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
+                ↳
+              </span>
+              <span className="text-stone-600 dark:text-stone-400">
+                built{" "}
+                <Link
+                  href="https://pathfinderbydeepanshi.vercel.app"
+                  className="font-medium"
+                >
+                  Pathfinder
+                </Link>
+                , a pathfinding visualizer implementing BFS, DFS, Dijkstra&apos;s,
+                and A* in JS + canvas
+              </span>
+            </li>
+
+            <li className="relative flex items-start gap-4 group/item">
+              <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
+                ↳
+              </span>
+              <span className="text-stone-600 dark:text-stone-400">
+                solved{" "}
+                <Link
+                  href="https://leetcode.com/u/danshi11/"
+                  className="font-medium"
+                >
+                  500+ DSA problems on LeetCode
+                </Link>
+                , with a 100+ day streak
               </span>
             </li>
           </ul>
         </li>
+
         <li className="group flex flex-col gap-3 pl-4 relative hover:translate-x-1 transition-transform duration-200">
           <div className="absolute left-0 top-[10px] w-[6px] h-[6px] bg-stone-800 dark:bg-stone-200 rotate-45 transform transition-all duration-300 group-hover:rotate-90 group-hover:scale-110" />
+
           <span className="text-stone-600 dark:text-stone-400 italic font-medium">
-            previously:
+            led:
           </span>
+
           <ul className="grid gap-1 pl-4">
             <li className="relative flex items-start gap-4 group/item">
               <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
                 ↳
               </span>
               <span className="text-stone-600 dark:text-stone-400">
-                Engineering
-                <span className="inline-flex items-baseline gap-1 ml-2">
-                  <Image
-                    src={ShopifyLogo}
-                    alt="Shopify Logo"
-                    width={14}
-                    height={14}
-                    className="object-contain relative top-[2px]"
-                  />
-                  <Link href="https://shopify.com" className="font-medium">
-                    Shopify
-                  </Link>
-                </span>
+                Head of Design &amp; Creative Strategy,{" "}
+                <Link
+                  href="https://tedx-igdtuw.vercel.app"
+                  className="font-medium"
+                >
+                  TEDxIGDTU
+                </Link>
               </span>
             </li>
+
             <li className="relative flex items-start gap-4 group/item">
               <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
                 ↳
               </span>
               <span className="text-stone-600 dark:text-stone-400">
-                Engineering
-                <span className="inline-flex items-baseline gap-1 ml-2">
-                  <Image
-                    src={BrowserbaseLogo}
-                    alt="Browserbase Logo"
-                    width={14}
-                    height={14}
-                    className="object-contain relative top-[2px]"
-                  />
-                  <Link href="https://browserbase.com" className="font-medium">
-                    Browserbase
-                  </Link>
-                </span>
+                Head of International Press,{" "}
+                <Link
+                  href="https://www.instagram.com/igdtuwmun_/"
+                  className="font-medium"
+                >
+                  IGDTUWMUN&apos;26
+                </Link>
               </span>
             </li>
+          </ul>
+        </li>
+
+        <li className="group flex flex-col gap-3 pl-4 relative hover:translate-x-1 transition-transform duration-200">
+          <div className="absolute left-0 top-[10px] w-[6px] h-[6px] bg-stone-800 dark:bg-stone-200 rotate-45 transform transition-all duration-300 group-hover:rotate-90 group-hover:scale-110" />
+
+          <span className="text-stone-600 dark:text-stone-400 italic font-medium">
+            more:
+          </span>
+
+          <ul className="grid gap-1 pl-4">
             <li className="relative flex items-start gap-4 group/item">
               <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
                 ↳
               </span>
               <span className="text-stone-600 dark:text-stone-400">
-                ML research
-                <span className="inline-flex items-baseline gap-1 ml-2">
-                  <Image
-                    src={SunnybrookLogo}
-                    alt="Sunnybrook Logo"
-                    width={14}
-                    height={14}
-                    className="object-contain relative top-[2px]"
-                  />
-                  <Link
-                    href="https://sunnybrook.ca/research/"
-                    className="font-medium"
-                  >
-                    Sunnybrook
-                  </Link>
-                </span>
+                Vice-Chancellor Exceptional Achievement Award,{" "}
+                <Link
+                  href="https://www.igdtuw.ac.in"
+                  className="font-medium"
+                >
+                  IGDTUW
+                </Link>
               </span>
             </li>
+
             <li className="relative flex items-start gap-4 group/item">
               <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
                 ↳
               </span>
               <span className="text-stone-600 dark:text-stone-400">
-                Research
-                <span className="inline-flex items-baseline gap-1 ml-2">
-                  <Image
-                    src={UWaterlooLogo}
-                    alt="UWaterloo Logo"
-                    width={14}
-                    height={14}
-                    className="object-contain relative top-[2px]"
-                  />
-                  <Link
-                    href="https://cs.uwaterloo.ca/~dbarrada/"
-                    className="font-medium"
-                  >
-                    UWaterloo
-                  </Link>
-                </span>
+                1st Place 🏆 Innoquest Constraint Challenge,{" "}
+                <Link
+                  href="https://iiitd.ac.in"
+                  className="font-medium"
+                >
+                  IIIT Delhi
+                </Link>
+              </span>
+            </li>
+
+            <li className="relative flex items-start gap-4 group/item">
+              <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
+                ↳
+              </span>
+              <span className="text-stone-600 dark:text-stone-400">
+                Top 3 AI/ML Cohort 🥉{" "}
+                <Link
+                  href="https://gdg.community.dev/gdg-on-campus-indira-gandhi-delhi-technical-university-for-women-delhi-india/"
+                  className="font-medium"
+                >
+                  Google Developers Group
+                </Link>
+              </span>
+            </li>
+
+            <li className="relative flex items-start gap-4 group/item">
+              <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
+                ↳
+              </span>
+              <span className="text-stone-600 dark:text-stone-400">
+                1st Place 🏆 Vision Rendezvous UI/UX,{" "}
+                <Link
+                  href="https://home.iitd.ac.in"
+                  className="font-medium"
+                >
+                  IIT Delhi
+                </Link>
+              </span>
+            </li>
+
+            <li className="relative flex items-start gap-4 group/item">
+              <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
+                ↳
+              </span>
+              <span className="text-stone-600 dark:text-stone-400">
+                3rd Place 🏆 ILUX UI/UX,{" "}
+                <Link
+                  href="https://www.dtu.ac.in/Web/About/contactus.php"
+                  className="font-medium"
+                >
+                  DTU
+                </Link>
+              </span>
+            </li>
+
+            <li className="relative flex items-start gap-4 group/item">
+              <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
+                ↳
+              </span>
+              <span className="text-stone-600 dark:text-stone-400">
+                Head of Web Development and Design 🖥️, Microsoft Student
+                Chapter, IGDTUW
               </span>
             </li>
           </ul>

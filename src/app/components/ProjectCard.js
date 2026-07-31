@@ -12,7 +12,14 @@ const shimmer = `
   </defs>
   <rect width="100%" height="100%" fill="#333" />
   <rect id="r" width="100%" height="100%" fill="url(#g)" />
-  <animate xlink:href="#r" attributeName="x" from="-100%" to="100%" dur="1s" repeatCount="indefinite"  />
+  <animate
+    xlink:href="#r"
+    attributeName="x"
+    from="-100%"
+    to="100%"
+    dur="1s"
+    repeatCount="indefinite"
+  />
 </svg>`;
 
 const toBase64 = (str) =>
@@ -63,6 +70,7 @@ export default function ProjectCard({
           )}
         </div>
       </a>
+
       <div className="p-5">
         <div className="flex justify-between items-start gap-4">
           <div>
@@ -74,26 +82,31 @@ export default function ProjectCard({
             >
               {title}
             </a>
+
             <p className="text-neutral-600 dark:text-neutral-400 mt-2 leading-relaxed">
               {description}
             </p>
           </div>
+
           <div className="flex gap-2">
             {github && (
               <a
                 href={github}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`${title} GitHub`}
                 className="p-2 rounded-lg text-neutral-600 dark:text-neutral-400 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors"
               >
                 <Github className="w-5 h-5" />
               </a>
             )}
+
             {demo && (
               <a
                 href={demo}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`${title} demo`}
                 className="p-2 rounded-lg text-neutral-600 dark:text-neutral-400 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors"
               >
                 <SquareArrowOutUpRight className="w-5 h-5" />
