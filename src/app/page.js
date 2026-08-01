@@ -240,7 +240,7 @@ export default function About() {
         <GalleryHorizontalEnd className="size-5 inline align-top ml-1 transition-transform group-hover:rotate-3" />
       </NextLink>
 
-      <div className="flex flex-col sm:flex-row items-center justify-end mt-3">
+      <div className="flex flex-col sm:flex-row items-center justify-end mt-1">
         <Signature />
       </div>
     </div>
