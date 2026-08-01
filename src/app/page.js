@@ -104,12 +104,12 @@ export default function About() {
               </span>
 
               <span className="text-stone-600 dark:text-stone-400">
-                figuring out what happens when everything needs the same{" "}
+                made berth assignments impossible to double-book{" "}
                 <Link
                   href="https://github.com/deepanshiruhil/HarborCore"
                   className="font-medium"
                 >
-                  dock
+                  double-book
                 </Link>
               </span>
             </li>
