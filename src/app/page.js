@@ -13,6 +13,8 @@ export default function About() {
   return (
     <div className="flex flex-col max-w-2xl mx-auto font-extralight">
       <ul className="grid gap-1 text-base">
+
+        {/* SDE Intern */}
         <li className="group flex items-start gap-4 pl-4 relative hover:translate-x-1 transition-transform duration-200">
           <div className="absolute left-0 top-[10px] w-[6px] h-[6px] bg-stone-800 dark:bg-stone-200 rotate-45 transform transition-all duration-300 group-hover:rotate-90 group-hover:scale-110" />
 
@@ -24,17 +26,19 @@ export default function About() {
                 href="https://www.saleostech.com"
                 className="font-medium ml-2"
               >
-                SaleOSTech Limited, UK
+                SaleosTech
               </Link>
+              <span>, UK</span>
             </span>
           </span>
         </li>
 
+        {/* Education */}
         <li className="group flex items-start gap-4 pl-4 relative hover:translate-x-1 transition-transform duration-200">
           <div className="absolute left-0 top-[10px] w-[6px] h-[6px] bg-stone-800 dark:bg-stone-200 rotate-45 transform transition-all duration-300 group-hover:rotate-90 group-hover:scale-110" />
 
           <span className="text-stone-600 dark:text-stone-400">
-            CSAI Junior
+            Computer Science &amp; Artificial Intelligence
             <span className="ml-2">
               →
               <Link
@@ -47,96 +51,123 @@ export default function About() {
           </span>
         </li>
 
+        {/* What I've been building */}
         <li className="group flex flex-col gap-3 pl-4 relative hover:translate-x-1 transition-transform duration-200">
           <div className="absolute left-0 top-[10px] w-[6px] h-[6px] bg-stone-800 dark:bg-stone-200 rotate-45 transform transition-all duration-300 group-hover:rotate-90 group-hover:scale-110" />
 
           <span className="text-stone-600 dark:text-stone-400 italic font-medium">
-            what i&apos;ve been doing:
+            what i&apos;ve been building:
           </span>
 
-          <ul className="grid gap-1 pl-4">
-            <li className="relative flex items-start gap-4 group/item">
-              <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
-                ↳
-              </span>
-              <span className="text-stone-600 dark:text-stone-400">
-                built{" "}
-                <Link
-                  href="https://github.com/deepanshiruhil/HarborCore"
-                  className="font-medium"
-                >
-                  HarborCore
-                </Link>
-                , a concurrent port reconciliation system using pessimistic
-                locking, CTEs, and window functions
-              </span>
-            </li>
+          <ul className="grid gap-2 pl-4">
 
+            {/* Notation */}
             <li className="relative flex items-start gap-4 group/item">
               <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
                 ↳
               </span>
+
               <span className="text-stone-600 dark:text-stone-400">
-                built{" "}
+                created{" "}
                 <Link
                   href="https://notationbydeepanshi.vercel.app"
                   className="font-medium"
                 >
                   Notation
-                </Link>
-                , a multimodal PDF-to-LaTeX pipeline using Gemini 2.5 Flash
+                </Link>{" "}
+                — unreadable handwritten math → efficient LaTeX notes
               </span>
             </li>
 
+            {/* Zomato ETA */}
             <li className="relative flex items-start gap-4 group/item">
               <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
                 ↳
               </span>
+
               <span className="text-stone-600 dark:text-stone-400">
-                built{" "}
+                debunking what “
+                <Link
+                  href="https://github.com/deepanshiruhil/Zomato_ETA"
+                  className="font-medium"
+                >
+                  your order
+                </Link>
+                ” arriving soon actually means
+              </span>
+            </li>
+
+            {/* HarborCore */}
+            <li className="relative flex items-start gap-4 group/item">
+              <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
+                ↳
+              </span>
+
+              <span className="text-stone-600 dark:text-stone-400">
+                figuring out what happens when everything needs the same{" "}
+                <Link
+                  href="https://github.com/deepanshiruhil/HarborCore"
+                  className="font-medium"
+                >
+                  dock
+                </Link>
+              </span>
+            </li>
+
+            {/* Pathfinder */}
+            <li className="relative flex items-start gap-4 group/item">
+              <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
+                ↳
+              </span>
+
+              <span className="text-stone-600 dark:text-stone-400">
+                watching{" "}
                 <Link
                   href="https://pathfinderbydeepanshi.vercel.app"
                   className="font-medium"
                 >
-                  Pathfinder
-                </Link>
-                , a pathfinding visualizer implementing BFS, DFS, Dijkstra&apos;s,
-                and A* in JS + canvas
+                  algorithms
+                </Link>{" "}
+                argue over the best way through a wall
               </span>
             </li>
 
-            <li className="relative flex items-start gap-4 group/item">
-              <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
-                ↳
-              </span>
-              <span className="text-stone-600 dark:text-stone-400">
-                solved{" "}
-                <Link
-                  href="https://leetcode.com/u/danshi11/"
-                  className="font-medium"
-                >
-                  500+ DSA problems on LeetCode
-                </Link>
-                , with a 100+ day streak
-              </span>
-            </li>
           </ul>
         </li>
 
+        {/* Currently */}
         <li className="group flex flex-col gap-3 pl-4 relative hover:translate-x-1 transition-transform duration-200">
           <div className="absolute left-0 top-[10px] w-[6px] h-[6px] bg-stone-800 dark:bg-stone-200 rotate-45 transform transition-all duration-300 group-hover:rotate-90 group-hover:scale-110" />
 
           <span className="text-stone-600 dark:text-stone-400 italic font-medium">
-            led:
+            currently:
           </span>
 
           <ul className="grid gap-1 pl-4">
+
             <li className="relative flex items-start gap-4 group/item">
               <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
                 ↳
               </span>
+
               <span className="text-stone-600 dark:text-stone-400">
-                Head of Design &amp; Creative Strategy,{" "}
+                merging pull requests at{" "}
+                <Link
+                  href="https://msc-site.vercel.app/"
+                  className="font-medium"
+                >
+                  Microsoft Student Chapter, IGDTUW
+                </Link>
+              </span>
+            </li>
+
+            <li className="relative flex items-start gap-4 group/item">
+              <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
+                ↳
+              </span>
+
+              <span className="text-stone-600 dark:text-stone-400">
+                designing at{" "}
                 <Link
                   href="https://tedx-igdtuw.vercel.app"
                   className="font-medium"
@@ -146,43 +177,26 @@ export default function About() {
               </span>
             </li>
 
-            <li className="relative flex items-start gap-4 group/item">
-              <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
-                ↳
-              </span>
-              <span className="text-stone-600 dark:text-stone-400">
-                Head of International Press,{" "}
-                <Link
-                  href="https://www.instagram.com/igdtuwmun_/"
-                  className="font-medium"
-                >
-                  IGDTUWMUN&apos;26
-                </Link>
-              </span>
-            </li>
           </ul>
         </li>
 
+        {/* Achievements */}
         <li className="group flex flex-col gap-3 pl-4 relative hover:translate-x-1 transition-transform duration-200">
           <div className="absolute left-0 top-[10px] w-[6px] h-[6px] bg-stone-800 dark:bg-stone-200 rotate-45 transform transition-all duration-300 group-hover:rotate-90 group-hover:scale-110" />
 
           <span className="text-stone-600 dark:text-stone-400 italic font-medium">
-            more:
+            somehow, i&apos;ve also:
           </span>
 
           <ul className="grid gap-1 pl-4">
+
             <li className="relative flex items-start gap-4 group/item">
               <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
                 ↳
               </span>
+
               <span className="text-stone-600 dark:text-stone-400">
-                Vice-Chancellor Exceptional Achievement Award,{" "}
-                <Link
-                  href="https://www.igdtuw.ac.in"
-                  className="font-medium"
-                >
-                  IGDTUW
-                </Link>
+                made it to the top 1500 out of 125k+ → Google Big Code
               </span>
             </li>
 
@@ -190,14 +204,9 @@ export default function About() {
               <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
                 ↳
               </span>
+
               <span className="text-stone-600 dark:text-stone-400">
-                1st Place 🏆 Innoquest Constraint Challenge,{" "}
-                <Link
-                  href="https://iiitd.ac.in"
-                  className="font-medium"
-                >
-                  IIIT Delhi
-                </Link>
+                won a few comps (7+) → IIT Delhi · IIIT Delhi · DTU
               </span>
             </li>
 
@@ -205,60 +214,24 @@ export default function About() {
               <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
                 ↳
               </span>
+
               <span className="text-stone-600 dark:text-stone-400">
-                Top 3 AI/ML Cohort 🥉{" "}
+                solved 500+ problems →{" "}
                 <Link
-                  href="https://gdg.community.dev/gdg-on-campus-indira-gandhi-delhi-technical-university-for-women-delhi-india/"
+                  href="https://leetcode.com/u/danshi11/"
                   className="font-medium"
                 >
-                  Google Developers Group
+                  LeetCode
                 </Link>
               </span>
             </li>
 
-            <li className="relative flex items-start gap-4 group/item">
-              <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
-                ↳
-              </span>
-              <span className="text-stone-600 dark:text-stone-400">
-                1st Place 🏆 Vision Rendezvous UI/UX,{" "}
-                <Link
-                  href="https://home.iitd.ac.in"
-                  className="font-medium"
-                >
-                  IIT Delhi
-                </Link>
-              </span>
-            </li>
-
-            <li className="relative flex items-start gap-4 group/item">
-              <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
-                ↳
-              </span>
-              <span className="text-stone-600 dark:text-stone-400">
-                3rd Place 🏆 ILUX UI/UX,{" "}
-                <Link
-                  href="https://www.dtu.ac.in/Web/About/contactus.php"
-                  className="font-medium"
-                >
-                  DTU
-                </Link>
-              </span>
-            </li>
-
-            <li className="relative flex items-start gap-4 group/item">
-              <span className="absolute left-[-20px] top-0 text-stone-500 dark:text-stone-500">
-                ↳
-              </span>
-              <span className="text-stone-600 dark:text-stone-400">
-                Head of Web Development and Design 🖥️, Microsoft Student
-                Chapter, IGDTUW
-              </span>
-            </li>
           </ul>
         </li>
+
       </ul>
 
+      {/* Projects button */}
       <NextLink
         href="/projects"
         className="text-center mt-4 py-4 px-6 rounded-lg border border-stone-400 dark:border-stone-600 bg-stone-50 dark:bg-stone-900 text-stone-600 dark:text-stone-400 transform transition-all duration-300 font-extralight hover:scale-[1.02] active:scale-[0.98] shadow-sm"
