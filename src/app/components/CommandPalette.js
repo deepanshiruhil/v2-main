@@ -13,12 +13,12 @@ import {
   Github,
   Linkedin,
   ExternalLink,
-  Twitter,
   Mail,
   CodeXml,
   Lightbulb,
   Sun,
   Moon,
+  Code2,
 } from "lucide-react";
 import useMobileDevice from "../hooks/useMobileDevice";
 import { useTheme } from "./ThemeProvider";
@@ -158,24 +158,26 @@ export default function CommandPalette() {
         runCommand(() => router.push("/writing"));
       } else if (key === "x") {
         e.preventDefault();
-        runCommand(() => window.open("https://x.com/martinsit", "_blank"));
+        runCommand(() =>
+          window.open("https://leetcode.com/u/danshi11/", "_blank")
+        );
       } else if (key === "l") {
         e.preventDefault();
         runCommand(() =>
-          window.open("https://www.linkedin.com/in/martin-sit/", "_blank")
+          window.open("https://www.linkedin.com/in/deepanshiruhil1/", "_blank")
         );
       } else if (key === "g") {
         e.preventDefault();
-        runCommand(() => window.open("https://github.com/martin226", "_blank"));
+        runCommand(() => window.open("https://github.com/deepanshiruhil", "_blank"));
       } else if (key === "e") {
         e.preventDefault();
         runCommand(() =>
-          window.open("mailto:martinsit288@gmail.com", "_blank")
+          window.open("mailto:ruhildeepanshi@gmail.com", "_blank")
         );
       } else if (key === "c") {
         e.preventDefault();
         runCommand(() =>
-          window.open("https://github.com/martin226/v2", "_blank")
+          window.open("YOUR_RESUME_LINK_HERE", "_blank")
         );
       } else if (key === "t") {
         e.preventDefault();
@@ -292,16 +294,16 @@ export default function CommandPalette() {
                 className="px-2 text-stone-500 dark:text-stone-400"
               >
                 <Command.Item
-                  value="twitter"
+                  value="leetcode"
                   onSelect={() =>
                     runCommand(() =>
-                      window.open("https://x.com/_martinsit", "_blank")
+                      window.open("https://leetcode.com/u/danshi11/", "_blank")
                     )
                   }
                   className="flex items-center gap-2 px-3 py-2 text-sm text-stone-600 dark:text-stone-400 rounded hover:bg-stone-100 dark:hover:bg-stone-800 cursor-pointer data-[selected=true]:bg-stone-100 dark:data-[selected=true]:bg-stone-800"
                 >
-                  <Twitter className="h-4 w-4" />
-                  <span className="flex-1">X Profile</span>
+                  <Code2 className="h-4 w-4" />
+                  <span className="flex-1">LeetCode Profile</span>
                   <Shortcut isModifierPressed={isModifierPressed}>X</Shortcut>
                 </Command.Item>
                 <Command.Item
@@ -309,7 +311,7 @@ export default function CommandPalette() {
                   onSelect={() =>
                     runCommand(() =>
                       window.open(
-                        "https://www.linkedin.com/in/martin-sit/",
+                        "https://www.linkedin.com/in/deepanshiruhil1/",
                         "_blank"
                       )
                     )
@@ -324,7 +326,7 @@ export default function CommandPalette() {
                   value="github"
                   onSelect={() =>
                     runCommand(() =>
-                      window.open("https://github.com/martin226", "_blank")
+                      window.open("https://github.com/deepanshiruhil", "_blank")
                     )
                   }
                   className="flex items-center gap-2 px-3 py-2 text-sm text-stone-600 dark:text-stone-400 rounded hover:bg-stone-100 dark:hover:bg-stone-800 cursor-pointer data-[selected=true]:bg-stone-100 dark:data-[selected=true]:bg-stone-800"
@@ -337,7 +339,7 @@ export default function CommandPalette() {
                   value="email"
                   onSelect={() =>
                     runCommand(() =>
-                      window.open("mailto:martinsit288@gmail.com", "_blank")
+                      window.open("mailto:ruhildeepanshi@gmail.com", "_blank")
                     )
                   }
                   className="flex items-center gap-2 px-3 py-2 text-sm text-stone-600 dark:text-stone-400 rounded hover:bg-stone-100 dark:hover:bg-stone-800 cursor-pointer data-[selected=true]:bg-stone-100 dark:data-[selected=true]:bg-stone-800"
@@ -347,16 +349,16 @@ export default function CommandPalette() {
                   <Shortcut isModifierPressed={isModifierPressed}>E</Shortcut>
                 </Command.Item>
                 <Command.Item
-                  value="source"
+                  value="resume"
                   onSelect={() =>
                     runCommand(() =>
-                      window.open("https://github.com/martin226/v2", "_blank")
+                      window.open("YOUR_RESUME_LINK_HERE", "_blank")
                     )
                   }
                   className="flex items-center gap-2 px-3 py-2 text-sm text-stone-600 dark:text-stone-400 rounded hover:bg-stone-100 dark:hover:bg-stone-800 cursor-pointer data-[selected=true]:bg-stone-100 dark:data-[selected=true]:bg-stone-800"
                 >
-                  <CodeXml className="h-4 w-4" />
-                  <span className="flex-1">Website Repository</span>
+                  <FileText className="h-4 w-4" />
+                  <span className="flex-1">Resume</span>
                   <Shortcut isModifierPressed={isModifierPressed}>C</Shortcut>
                 </Command.Item>
               </Command.Group>
