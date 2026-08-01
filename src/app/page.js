@@ -104,7 +104,7 @@ export default function About() {
               </span>
 
               <span className="text-stone-600 dark:text-stone-400">
-                made berth assignments impossible to double-book{" "}
+                made berth assignments impossible to {" "}
                 <Link
                   href="https://github.com/deepanshiruhil/HarborCore"
                   className="font-medium"
