@@ -5,7 +5,7 @@
     Personal Website
 </h1>
 <p align="center">
-    My personal website. Built with <a href="https://nextjs.org" target="_blank">Next.js</a> and <a href="https://tailwindcss.com" target="_blank">Tailwind CSS</a>. Check it out at <a href="https://deepanshiruhil.vercel.app" target="_blank">deepanshiruhil.in</a>.
+    My personal website. Built with <a href="https://nextjs.org" target="_blank">Next.js</a> and <a href="https://tailwindcss.com" target="_blank">Tailwind CSS</a>. Check it out at <a href="https://deepanshiruhilportfolio.vercel.app" target="_blank">https://deepanshiruhilportfolio.vercel.app</a>.
 </p>
 
 ## Getting Started
